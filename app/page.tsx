@@ -9,13 +9,26 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-[#fdf6f5] to-[#e6f4f1] font-sans">
+    // 💡 핵심 수정: bg-[#faf9f8] 였던 부분을 완벽한 흰색인 bg-white 로 변경했습니다!
+    <main className="min-h-screen bg-white font-sans relative overflow-hidden">
       <Navbar />
 
       <div className="flex flex-col items-center pt-8">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-serif tracking-widest text-gray-900 mb-2">SAKURA</h1>
-          <p className="text-sm tracking-widest text-gray-500 uppercase">Hair Salon</p>
+        
+        {/* 로고 및 벚꽃 배경 영역 */}
+        <div className="relative text-center mb-8 flex flex-col items-center justify-center w-full max-w-md py-16">
+          
+          <div className="absolute inset-0 z-0 flex items-center justify-center opacity-80 pointer-events-none">
+            {/* 이제 배경이 완벽한 흰색이므로 네모난 경계선이 완전히 사라집니다 */}
+            <img 
+              src="/images/sakura-bg.png" 
+              alt="sakura decoration" 
+              className="w-[140%] max-w-none h-auto mix-blend-multiply" 
+            />
+          </div>
+
+          <h1 className="text-6xl font-serif tracking-widest text-gray-900 mb-2 relative z-10">SAKURA</h1>
+          <p className="text-sm tracking-widest text-gray-600 uppercase relative z-10">Hair Salon</p>
         </div>
 
         <BrandStory />
