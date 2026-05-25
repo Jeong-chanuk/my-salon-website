@@ -5,7 +5,7 @@ export default function Gallery() {
       {/* 갤러리 제목 영역 */}
       <div className="text-center mb-12">
         <h2 className="text-3xl font-serif text-gray-900 mb-3">Our Space & Moments</h2>
-        <p className="text-sm text-gray-500 tracking-widest uppercase">자연과 어우러진 편안한 휴식처</p>
+        <p className="text-sm text-gray-500 tracking-widest uppercase">「自然と調和する安らぎの空間」</p>
       </div>
 
       {/* 비대칭 그리드 레이아웃 (PC에서는 4칸 분할, 모바일에서는 1칸씩) */}

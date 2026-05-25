@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import BrandStory from '../components/BrandStory';
 import Gallery from '../components/Gallery';
 import ServiceCard from '../components/ServiceCard';
 import Pricing from '../components/Pricing';
@@ -16,26 +17,30 @@ export default function Home() {
           <h1 className="text-5xl font-serif tracking-widest text-gray-900 mb-2">SAKURA</h1>
           <p className="text-sm tracking-widest text-gray-500 uppercase">Hair Salon</p>
         </div>
+
+        <BrandStory />
+
         <Gallery />
-        {/* 서비스 카드 영역 */}
+        
+       {/* 5. 서비스 카드 영역 */}
         <div className="w-full px-4 flex flex-col items-center">
           <ServiceCard
-            title="Hairstyling & Cut"
-            description="High quality natural lighting photography for dull and uneven hair. Transform with a stylish hair treatment."
+            title="似合わせカット＆スタイリング" // (맞춤 컷 & 스타일링)
+            description="お客様一人ひとりの骨格や髪質に合わせたオーダーメイドのカット。まとまりのなかった髪を、ご自宅でも再現しやすい美しいシルエットへと導きます。"
             price="¥6,000"
-            beforeImage="/images/Before_Hairstyling_and_Cut.png" // 👈 여기 사진 이름을 수정하세요
-            afterImage="/images/After_Hairstyling_and_Cut.png"   // 👈 여기 사진 이름을 수정하세요
+            beforeImage="/images/Before_Hairstyling_and_Cut.png" 
+            afterImage="/images/After_Hairstyling_and_Cut.png"   
           />
           <ServiceCard
-            title="Coloring"
-            description="Premium Color. High quality natural lighting photography and ensure slow fade. Balayage color transformation."
+            title="プレミアムカラー" // (프리미엄 컬러)
+            description="髪へのダメージを最小限に抑えた上質なカラーリング。透明感のある艶やかな色味が長持ちし、立体感のある洗練されたスタイルを実現します。"
             price="¥10,000"
             beforeImage="/images/Before_coloring.png"
             afterImage="/images/After_coloring.png"
           />
           <ServiceCard
-            title="Treatments"
-            description="Deep Conditioning. High quality natural lighting. Protects shiny, healthy and conditioning hair."
+            title="髪質改善トリートメント" // (머릿결 개선 트리트먼트)
+            description="髪の芯から潤いを満たす、最高級のディープコンディショニング。パサつきやダメージを根本から補修し、シルクのような滑らかで健康的な艶髪へ。"
             price="¥8,000"
             beforeImage="/images/Before_Treatments.png"
             afterImage="/images/After_Treatments.png"
